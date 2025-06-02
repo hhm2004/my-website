@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submitted Messages</title>
+</head>
+<body>
+  <h1>Messages</h1>
+  <ul>
+    {% for email, subject, message in messages %}
+      <li><strong>{{ email }}</strong> - {{ subject }}<br>{{ message }}</li><hr>
+    {% endfor %}
+  </ul>
+</body>
+</html>
